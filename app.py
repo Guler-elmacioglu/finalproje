@@ -9,7 +9,8 @@ app = Flask(__name__)
 app.secret_key = "çok gizli key"
 
 # Veri tabanı bağlantısı
-uri = os.getenv("MONGO_ATLAS_URI")
+#uri = os.getenv("MONGO_ATLAS_URI")
+uri="mongodb+srv://egitim:egitim48@cluster0-eck2c.mongodb.net/test?retryWrites=true&w=majority"
 client = MongoClient(uri)
 db = client.galeri.uyeler
 db2 = client.galeri.yorumlar
