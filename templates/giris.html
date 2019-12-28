@@ -1,0 +1,47 @@
+{% extends "taslak.html" %} {% block icerik %}
+<p>{{hata}}</p>
+<!-- Kullanıcının siteye giriş yapması için kullanılan form kısmı -->
+<body id="araba" background="/static/image/backk.jpg">
+<div class="row ">
+  <form  action="/giris" method="POST" class="col l6 offset-l3 white">
+    <div class="row">
+      <div class="input-field col s12">
+        <i class="material-icons prefix">email</i>
+        <input name="email" id="email" type="email" class="validate" />
+        <label for="email">Email</label>
+        <span
+          class="helper-text"
+          data-error="eksik yada yanlış bir bilgi girdiniz"
+          data-success="epostanız kabul edilmiştir"
+        ></span>
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s12">
+        <input name="parola" id="password" type="password" class="validate" />
+        <label for="password">Password</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="center">
+        <button
+          class="waves-effect waves-red  btn-small"
+          type="submit"
+          name="action"
+        >
+          Giriş Yap
+          <i class="material-icons right">send </i>
+        </button>
+        <button
+          class="waves-effect waves-red  btn-small"
+          type="submit"
+          name="action" 
+        >
+          <i class="material-icons right">send</i>
+        </button>
+      </div>
+    </div>
+  </form>
+</div>
+</body>
+{% endblock %}

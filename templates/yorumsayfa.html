@@ -1,0 +1,21 @@
+{% extends "taslak.html" %} {% block icerik %}
+<div class="container">
+    <h1>Fikirleriniz bizim için degerlidir</h1>
+
+    <form action="/yorumyap"method="POST">
+     <input name="konu" id="konu" type="text" placeholder="baslik giriniz" />
+     <textarea name="yorum" id="yorum" cols="30" rows="10" placeholder="yorumunuzu yazınız"></textarea>
+        <label for="email">Email</label>
+    <input class="button" type ="submit"value="Gönder">
+    
+    
+    </form>
+
+
+
+</div>
+
+
+
+
+{% endblock %}

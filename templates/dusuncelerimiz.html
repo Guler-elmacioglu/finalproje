@@ -1,0 +1,23 @@
+{% extends "taslak.html" %} {% block icerik %}
+<div class="container">
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col-3">Baslik</th>
+        <th scope="col-3">ad</th>
+        <th scope="col-3">yorum</th>
+      </tr>
+    </thead>
+    <tbody>
+            {% for yap in veri %}
+        <tr>
+          <td>{{ yap.get("konu") }}</td>
+          <td>{{ yap.get("ad") }}</td>
+          <td>{{ yap.get("yorum") }}</td>
+        </tr>
+        {% endfor %}
+        <div>
+       
+</table>
+</div>
+{% endblock %}

@@ -1,0 +1,127 @@
+{% extends "taslak.html" %} {% block icerik %}
+
+<div class="row">
+  <div class="container col l6 offset-l1">
+    <div class="mySlides">
+      <div class="numbertext">1 / 5</div>
+      <img class="materialboxed" src="/static/image/porsche/1.jpg" style="width:100%" />
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 5</div>
+      <img class="materialboxed" src="/static/image/porsche/2.jpg" style="width:100%" />
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 5</div>
+      <img class="materialboxed" src="/static/image/porsche/3.jpg" style="width:100%" />
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 5</div>
+      <img class="materialboxed" src="/static/image/porsche/4.jpg" style="width:100%" />
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">5 / 5</div>
+      <img src="/static/image/porsche/source.gif" style="width:100%" />
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+    <div class="row col">
+      <div class="column">
+        <img
+          class="demo cursor"
+          src="/static/image/porsche/1.jpg"
+          style="width:100%"
+          onclick="currentSlide(1)"
+          alt="Büyütmek için resme tıklayınız."
+        />
+      </div>
+      <div class="column">
+        <img
+          class="demo cursor"
+          src="/static/image/porsche/2.jpg"
+          style="width:100%"
+          onclick="currentSlide(2)"
+          alt="Büyütmek için resme tıklayınız."
+        />
+      </div>
+      <div class="column">
+        <img
+          class="demo cursor"
+          src="/static/image/porsche/3.jpg"
+          style="width:100%"
+          onclick="currentSlide(3)"
+          alt="Büyütmek için resme tıklayınız."
+        />
+      </div>
+      <div class="column">
+        <img
+          class="demo cursor"
+          src="/static/image/porsche/4.jpg"
+          style="width:100%"
+          onclick="currentSlide(4)"
+          alt="Büyütmek için resme tıklayınız."
+        />
+      </div>
+      <div class="column">
+        <img
+          class="demo cursor"
+          src="/static/image/porsche/source.gif"
+          style="width:100%"
+          onclick="currentSlide(5)"
+        />
+      </div>
+    </div>
+  </div>
+  <div class="col l3 ">
+    <table class="striped centered " style="background-color:#90a4ae">
+      <thead>
+        <tr>
+          <th>Marka</th>
+          <th>Porsche</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Model</td>
+          <td>3.0 Diesel</td>
+        </tr>
+        <tr>
+          <td>Yıl</td>
+          <td>2018</td>
+        </tr>
+        <tr>
+          <td>Yakıt</td>
+          <td>Dizel</td>
+        </tr>
+        <tr>
+          <td>Vites</td>
+          <td>Yarı Otomatik</td>
+        </tr>
+        <tr>
+          <td>Renk</td>
+          <td>Beyaz</td>
+        </tr>
+        <tr>
+          <td>Motor Hacmi</td>
+          <td>3500 cc</td>
+        </tr>
+        <tr>
+          <td>Motor Gücü</td>
+          <td>350 hp</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+{% endblock %}

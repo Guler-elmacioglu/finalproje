@@ -1,0 +1,68 @@
+{% extends "taslak.html" %} {% block icerik %}
+     <!-- Sayfada yer alan resimlerin sayfayla beraber harket etmesi için parallax'tan yararlandım -->
+    <div class="parallax-container">
+      <div class="parallax">
+        <img src="/static/image/2.jpg" weight="100%" />
+      </div>
+    </div>
+
+        <h2 class="header"></h2>
+        <p class="grey-text text-darken-3 lighten-3"></p>
+      </div>
+       <!-- Anasayfada yer alan resimler. Card resim kullanımı -->
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-image">
+                 <!-- Resimlerin ortada büyüyerek açılması materialboxed kodu kullandım -->
+              <img class="materialboxed" src="/static/image/5.jpg" />
+
+              <a class="btn-floating halfway-fab waves-effect waves-light red"
+                ><i class="material-icons">favorite_border</i></a
+              >
+            </div>
+            <div class="card-content">
+                </div>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-image">
+              <img class="materialboxed" src="/static/image/308.jpg" />
+              <a class="btn-floating halfway-fab waves-effect waves-light red"
+                ><i class="material-icons">favorite_border</i></a
+              >
+            </div>
+            <div class="card-content">
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m4 ">
+          <div class="card">
+            <div class="card-image">
+              <img class="materialboxed" src="/static/image/12.jpg " />
+              <a class="btn-floating halfway-fab waves-effect waves-light red"
+                ><i class="material-icons">favorite_border</i></a
+              >
+            </div>
+            <div class="card-content">
+            </div>
+          </div>
+        </div>
+      </div>
+       <!-- Resimler arası geçiş sağlayan carousel kısmı -->
+      <div class="carousel">
+        <a class="carousel-item" ><img src="/static/image/6.jpg"/></a>
+        <a class="carousel-item" ><img src="/static/image/11.jpg"/></a>
+        <a class="carousel-item" ><img src="/static/image/9.jpg"/></a>
+        <a class="carousel-item" ><img src="/static/image/8.jpg"/></a>
+        <a class="carousel-item" ><img src="/static/image/7.jpg"/></a>
+      </div>
+    </div>
+    <div class="parallax-container">
+      <div class="parallax"><img src="/static/image/3.jpg" /></div>
+    </div>
+     
+    {% endblock %}
+
+   

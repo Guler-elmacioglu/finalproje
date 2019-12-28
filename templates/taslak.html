@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Yalçın Auto</title>
+    <!-- CSS çalışması için gerekli kodlar-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link
+      href="/static/css/materialize.css"
+      type="text/css"
+      rel="stylesheet"
+      media="screen,projection"
+    />
+    <link
+      href="/static/css/style.css"
+      type="text/css"
+      rel="stylesheet"
+      media="screen,projection"
+    />
+    <link
+      href="/static/css/index.css"
+      type="text/css"
+      rel="stylesheet"
+      media="screen,projection"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- üst menüde yer alan iconlar ve sekmeler -->
+    <nav>
+      <div class="nav-wrapper">
+        <ul class="left">
+          <li>
+            <a href="https://tr-tr.facebook.com/"
+              ><img src="/static/image/icon/fbook.png" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="https://twitter.com/login?lang=tr"
+              ><img src="/static/image/icon/twit.png" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/?hl=tr"
+              ><img src="/static/image/icon/ins.png" alt=""
+            /></a>
+          </li>
+        </ul>
+        <ul id="nav-mobile" class="right hide-on-med-and-down ">
+          <li><a>İletişim: 0539 313 98 21</a></li>
+          <li><a href="/giris">Giriş</a></li>
+          <li><a href="/cikisyap">| Çıkış</a></li>
+          <li><a href="/uyeol">Üye ol</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- üst menü oluşturmak için navbar kullandım  -->
+    <nav class="navv white">
+      <div class="navvv">
+        <ul id="nav-mobile" class="brand-logo center">
+          <li>
+            <a class="black-text" href="/"><h5>Anasayfa</h5></a>
+          </li>
+          <li>
+            <a class="black-text" href="/modeller"><h5>Modeller</h5></a>
+          </li>
+          <li>
+            <a class="black-text" href="/hakkımızda"><h5>Hakkımızda</h5></a>
+          </li>
+          <li>
+            <a class="black-text" href="/dusuncelerimiz"><h5>Yorumlar</h5></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    {% block icerik %} {% endblock %}
+
+    <footer class="page-footer white">
+      <div class="logo center-align">
+        <img src="/static/image/collectionlogo1.png" />
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="black-text">Bizi Takip Edin</h5>
+
+            <a href=""><img src="/static/image/icon/fbook.png" alt=""/></a>
+
+            <a href=""><img src="/static/image/icon/twit.png" alt=""/></a>
+
+            <a href=""><img src="/static/image/icon/ins.png" alt=""/></a>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="black-text">Bağlantılar</h5>
+            <ul>
+              <li><a class="grey-text text-darken-3" >Kurumsal</a></li>
+              <li>
+                <a class="grey-text text-darken-3" >Hizmetlerimiz</a>
+              </li>
+              <li>
+                <a class="grey-text text-darken-3" >Mağazalar</a>
+              </li>
+              <li>
+                <a class="grey-text text-darken-3"
+                  >Gizlilik ve Kullanım</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-copyright black">
+        <div class="container">
+          © 2000-2019 yalcınauto.com
+          <a class="grey-text text-lighten-4 right" 
+            >7/24 Müsteri Hizmetleri <br />
+            0850 222 22 52</a
+          >
+        </div>
+      </div>
+    </footer>
+    <!-- Kullanılan öğelerin çalışması için gerekli script kodları -->
+
+    <script>
+      $(document).ready(function() {
+        $(".parallax").parallax();
+      });
+    </script>
+    <script>
+      $(document).ready(function() {
+        $(".sidenav").sidenav();
+      });
+    </script>
+    <script>
+      $(document).ready(function() {
+        $(".carousel").carousel();
+      });
+      $(".materialboxed").materialbox();
+    </script>
+    <script>
+      $(".fixed-action-btn").floatingActionButton({
+        toolbarEnabled: true
+      });
+    </script>
+    <script>
+      $(document).ready(function() {
+        $("select").formSelect();
+      });
+    </script>
+    <script>
+        $(document).ready(function(){
+          $("select").formSelect();
+        });
+        </script>
+        <script
+          type="text/javascript"
+          src="https://code.jquery.com/jquery-2.1.1.min.js">
+        </script>
+        <script
+        type="text/javascript"
+        src="/static/js/materialize.min.js">
+        </script>
+        <script
+        type="text/javascript"
+        src="/static/js/js.js">
+        </script>
+        <script>
+          $(document).ready(function(){
+            $(".materialboxed").materialboxed();
+          });
+          </script>
+  </body>
+</html>

@@ -1,0 +1,142 @@
+{% extends "taslak.html" %} {% block icerik %}
+
+<div class="row">
+  <div class="container col l6 offset-l1">
+    <div class="mySlides">
+      <div class="numbertext">1 / 6</div>
+      <img class="materialboxed" src="/static/image/audi/1.jpg" style="width:100%" />
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 6</div>
+
+      <img class="materialboxed" src="/static/image/audi/2.jpg" style="width:100%" />
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 6</div>
+      <img class="materialboxed" src="/static/image/audi/3.jpg" style="width:100%" />
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 6</div>
+      <img class="materialboxed" src="/static/image/audi/4.jpg" style="width:100%" />
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">5 / 6</div>
+      <img class="materialboxed" src="/static/image/audi/5.jpeg" style="width:100%" />
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">6 / 6</div>
+      <img src="/static/image/audi/audi.gif" style="width:100%" />
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+    <div class="row col">
+      <div class="column">
+        <img
+          class="demo cursor"
+          src="/static/image/audi/1.jpg"
+          style="width:100%"
+          onclick="currentSlide(1)"
+          alt="Büyütmek için resme tıklayınız."
+        />
+      </div>
+      <div class="column">
+        <img
+          class="demo cursor"
+          src="/static/image/audi/2.jpg"
+          style="width:100%"
+          onclick="currentSlide(2)"
+          alt="Büyütmek için resme tıklayınız."
+        />
+      </div>
+      <div class="column">
+        <img
+          class="demo cursor"
+          src="/static/image/audi/3.jpg"
+          style="width:100%"
+          onclick="currentSlide(3)"
+          alt="Büyütmek için resme tıklayınız."
+        />
+      </div>
+      <div class="column">
+        <img
+          class="demo cursor"
+          src="/static/image/audi/4.jpg"
+          style="width:100%"
+          onclick="currentSlide(4)"
+          alt="Büyütmek için resme tıklayınız."
+        />
+      </div>
+      <div class="column">
+        <img
+          class="demo cursor"
+          src="/static/image/audi/5.jpeg"
+          style="width:100%"
+          onclick="currentSlide(5)"
+          alt="Büyütmek için resme tıklayınız."
+        />
+      </div>
+      <div class="column">
+        <img
+          class="demo cursor"
+          src="/static/image/audi/audi.gif"
+          style="width:100%"
+          onclick="currentSlide(6)"
+        />
+      </div>
+    </div>
+  </div>
+  <!-- Ürün özelliklerini gösteren tablo -->
+  <div class="col l4 ">
+    <table class="striped centered " bgcolor="#90a4ae ">
+      <thead>
+        <tr>
+          <th>Marka</th>
+          <th>Audi</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Model</td>
+          <td>A6 Sedan 2.0 TDI</td>
+        </tr>
+        <tr>
+          <td>Yıl</td>
+          <td>2019</td>
+        </tr>
+        <tr>
+          <td>Yakıt</td>
+          <td>Dizel</td>
+        </tr>
+        <tr>
+          <td>Vites</td>
+          <td>Otomatik</td>
+        </tr>
+        <tr>
+          <td>Renk</td>
+          <td>Mavi</td>
+        </tr>
+        <tr>
+          <td>Motor Hacmi</td>
+          <td>1968 cc</td>
+        </tr>
+        <tr>
+          <td>Motor Gücü</td>
+          <td>216 hp</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+{% endblock %}
